@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+div,
+p {
+    font-size: 1rem !important;
+
+}
+
+body {
+    background-color: #ECECEC;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: #ECECEC !important;
+}
+
+@media (max-width: 767px) {
+    .navbar-brand {
+        margin: 0 auto;
+    }
+    
+    /* Menü butonunun sağda olması */
+    .navbar-toggler {
+        position: absolute;
+        right: 15px;
+    }
+}
+
+/* Left and right background images */
+.background-left {
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 250px;
+    height: 500px;
+    background-image: url('/assets/Vector\ 3.svg');
+    /* Replace with your left image path */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.background-right {
+    position: absolute;
+    top: -100px;
+    right: 0;
+    width: 250px;
+    height: 500px;
+    background-image: url('assets/Vector\ 4.svg');
+    /* Replace with your right image path */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+
+.contact-btn {
+    background: linear-gradient(45deg, #8C3048, #FCBDA6);
+    border-width: 0px;
+    color: white !important;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+.contact-btn:hover {
+    background: linear-gradient(45deg, #FCBDA6, #8C3048);
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    max-height: 8rem;
+}
+
+/* Center logo on mobile */
+@media (max-width: 768px) {
+    
+    .contact-btn {
+        background: linear-gradient(45deg, #8C3048, #FCBDA6);
+        border-width: 0px;
+        color: white !important;
+        padding: 10px 15px;
+        border-radius: 12px;
+        transition: background 0.3s ease;
+        text-align: center;
+    }
+}
+
+
+.contact-input {
+    font-size: 0.8rem !important;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.contact-input::placeholder {
+    font-size: 0.8rem !important;
+    color: '#AEAEAE';
+    opacity: 1;
+    /* Firefox */
+}
+
+::-ms-input-placeholder {
+    /* Edge 12 -18 */
+    color: '#AEAEAE';
+
+}
+
+
+/* Change cursor to pointer on hover for nav items */
+.nav-link:hover {
+    cursor: pointer;
+}
+
+
+.info-card {
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    padding: 20px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-card img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.info-text {
+    font-weight: 500;
+    line-height: 2rem;
+    color: #333;
+    flex: 1;
+    font-size: 1rem;
+}
+
+.send-btn {
+    background-color: #8C3048;
+    color: white;
+    font-weight: bold;
+    
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: 60%;
+}
+.disclaimer-text {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
