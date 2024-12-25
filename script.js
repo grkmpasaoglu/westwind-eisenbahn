@@ -34,7 +34,7 @@ window.addEventListener("hashchange", scrollToHash);
 
 // const video = document.getElementById('scenicVideo');
 
-//     // Add a click event listener to toggle play/pause
+//     // Add a click event listener to     e play/pause
 //     video.addEventListener('click', () => {
 //         if (video.paused) {
 //             video.play();
